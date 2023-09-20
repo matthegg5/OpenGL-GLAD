@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8C9FD32A4A2AEC008D28F4 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8C9FD12A4A2AEC008D28F4 /* glad.c */; };
+		CA8C9FD42A4A2AEC008D28F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA8C9FD22A4A2AEC008D28F4 /* main.cpp */; };
+		CA8CA3842A4A2F63008D28F4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8CA3832A4A2F63008D28F4 /* OpenGL.framework */; };
+		CA8CA3862A4A2F7B008D28F4 /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8CA3852A4A2F7B008D28F4 /* libglfw.3.4.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA9489D32A4A274200D13B25 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA8C9FD12A4A2AEC008D28F4 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = src/glad.c; sourceTree = "<group>"; };
+		CA8C9FD22A4A2AEC008D28F4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		CA8CA37F2A4A2ECB008D28F4 /* glad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
+		CA8CA3812A4A2ECB008D28F4 /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
+		CA8CA3832A4A2F63008D28F4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CA8CA3852A4A2F7B008D28F4 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../../usr/local/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		CA9489D52A4A274200D13B25 /* opengl-glad */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opengl-glad"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9489D22A4A274200D13B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8CA3862A4A2F7B008D28F4 /* libglfw.3.4.dylib in Frameworks */,
+				CA8CA3842A4A2F63008D28F4 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA8CA37D2A4A2ECB008D28F4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CA37E2A4A2ECB008D28F4 /* glad */,
+				CA8CA3802A4A2ECB008D28F4 /* KHR */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		CA8CA37E2A4A2ECB008D28F4 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CA37F2A4A2ECB008D28F4 /* glad.h */,
+			);
+			path = glad;
+			sourceTree = "<group>";
+		};
+		CA8CA3802A4A2ECB008D28F4 /* KHR */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CA3812A4A2ECB008D28F4 /* khrplatform.h */,
+			);
+			path = KHR;
+			sourceTree = "<group>";
+		};
+		CA8CA3822A4A2F62008D28F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CA3852A4A2F7B008D28F4 /* libglfw.3.4.dylib */,
+				CA8CA3832A4A2F63008D28F4 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA9489CC2A4A274200D13B25 = {
+			isa = PBXGroup;
+			children = (
+				CA9489D72A4A274200D13B25 /* opengl-glad */,
+				CA9489D62A4A274200D13B25 /* Products */,
+				CA8CA3822A4A2F62008D28F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9489D62A4A274200D13B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9489D52A4A274200D13B25 /* opengl-glad */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9489D72A4A274200D13B25 /* opengl-glad */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CA37D2A4A2ECB008D28F4 /* include */,
+				CADEEDC62A4A2A5B00AB54FB /* src */,
+			);
+			path = "opengl-glad";
+			sourceTree = "<group>";
+		};
+		CADEEDC62A4A2A5B00AB54FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C9FD12A4A2AEC008D28F4 /* glad.c */,
+				CA8C9FD22A4A2AEC008D28F4 /* main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA9489D42A4A274200D13B25 /* opengl-glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9489DC2A4A274200D13B25 /* Build configuration list for PBXNativeTarget "opengl-glad" */;
+			buildPhases = (
+				CA9489D12A4A274200D13B25 /* Sources */,
+				CA9489D22A4A274200D13B25 /* Frameworks */,
+				CA9489D32A4A274200D13B25 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "opengl-glad";
+			productName = "opengl-glad";
+			productReference = CA9489D52A4A274200D13B25 /* opengl-glad */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9489CD2A4A274200D13B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = daisy;
+				TargetAttributes = {
+					CA9489D42A4A274200D13B25 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA9489D02A4A274200D13B25 /* Build configuration list for PBXProject "opengl-glad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA9489CC2A4A274200D13B25;
+			productRefGroup = CA9489D62A4A274200D13B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9489D42A4A274200D13B25 /* opengl-glad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9489D12A4A274200D13B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8C9FD42A4A2AEC008D28F4 /* main.cpp in Sources */,
+				CA8C9FD32A4A2AEC008D28F4 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA9489DA2A4A274200D13B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA9489DB2A4A274200D13B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA9489DD2A4A274200D13B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/Users/daisy/repos/opengl-glad/opengl-glad/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		CA9489DE2A4A274200D13B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/Users/daisy/repos/opengl-glad/opengl-glad/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9489D02A4A274200D13B25 /* Build configuration list for PBXProject "opengl-glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9489DA2A4A274200D13B25 /* Debug */,
+				CA9489DB2A4A274200D13B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9489DC2A4A274200D13B25 /* Build configuration list for PBXNativeTarget "opengl-glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9489DD2A4A274200D13B25 /* Debug */,
+				CA9489DE2A4A274200D13B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9489CD2A4A274200D13B25 /* Project object */;
+}
